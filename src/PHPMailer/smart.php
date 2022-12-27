@@ -24,16 +24,16 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.mail.ru';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'makha.pakha.02@mail.ru';                     //SMTP username
-    $mail->Password   = 'mCE3veuCcCcM9mqJipHb';                               //SMTP password
+    $mail->Username   = '';                     //SMTP username
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
      
-    ///////////////////// пароль от майла mCE3veuCcCcM9mqJipHb/////////////////////////////
+    ///////////////////// /////////////////////////////
     //Recipients
-    $mail->setFrom('makha.pakha.02@mail.ru', 'localhost'); 
-    $mail->addAddress('ovegod@mailto.plus');   //Add a recipient
+    $mail->setFrom('', 'localhost'); 
+    $mail->addAddress('');   //Add a recipient (сюда можно вставить временную почту)
 
     // Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
